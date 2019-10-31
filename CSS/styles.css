@@ -94,6 +94,7 @@ textarea {
   margin-top: .5em;
   background-color: #e6f2ff;
   resize: vertical;
+  transition: .5s;
 }
 
 label {
@@ -204,13 +205,13 @@ input::placeholder {
   margin-top: -2em;
 }
 
-.contact
 input:focus,
 select:focus {
     outline: none;
     border-color: #4d4dff;
     box-shadow: 0 0 5px #4d4dff;
     background-color: #eafaea;
+    transition: .6s;
 }
 
 textarea:focus {
