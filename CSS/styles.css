@@ -7,6 +7,7 @@ body {
   color: #4d4d4d;
   background-color: #c1f0c1;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
   }
 
   p {
@@ -15,10 +16,6 @@ body {
   margin-top: 0.5em;
   margin-left: 0em;
   font-weight: 300;
-}
-
-hr {
-  border-top: .4px solid #4d4d4d;
 }
 
 
@@ -47,13 +44,23 @@ h2 {
   margin-bottom: -.2em;
 }
 
-legend {
-  padding-top: 1em;
-  margin-bottom: -.5em;
-}
-
 fieldset {
   border: none;
+}
+
+legend {
+  padding-top: 1em;
+  margin-bottom: -1em;
+}
+
+.thick {
+  border-top: 4px solid #2c333a;
+  margin-top: -2em;
+}
+
+.thin {
+  border-top: 2px solid #2c333a;
+  margin-top: -.35em;
 }
 
 input,
@@ -80,7 +87,7 @@ select {
 
 textarea {
   height: 5em;
-  border-radius: 12px;;
+  border-radius: 12px;
   border: none;
   padding: .5em 1em;
   margin-bottom: 1em;
@@ -101,7 +108,6 @@ button {
   background-color: #3333ff;
   color: white;
   font-size: 1.3em;
-  font-weight: 600px;
   border-radius: 12px;
 }
 
@@ -146,17 +152,20 @@ footer {
   width: 100%;
 }
 
-.contact {
-  border-top: 4px solid #2c333a;
+.line-wrap {
+  margin: 0 13px;
 }
 
 .newsletter {
   margin-top: 1em;
-  border-top: 2px solid #2c333a;
 }
 
-.contact legend {
-  border-top: 2px solid #2c333a;
+.contact {
+  border-bottom: 2px solid #2c333a;
+  padding-bottom: 2.5em;
+}
+
+.primary-content {
   padding-top: 2em;
 }
 
@@ -200,19 +209,20 @@ input:focus,
 select:focus {
     outline: none;
     border-color: #4d4dff;
-    box-shadow: 0 0 10px #4d4dff;
+    box-shadow: 0 0 5px #4d4dff;
+    background-color: #eafaea;
 }
 
 textarea:focus {
   outline: none;
   border-color: #4d4dff;
-  box-shadow: 0 0 10px #4d4dff;
+  box-shadow: 0 0 5px #4d4dff;
+  background-color: #eafaea;
 }
 
-input:focus:placeholder {
+input:focus::placeholder {
   display: none;
 }
-
 
 /* ---- Media Queries ---- */
 
@@ -240,7 +250,7 @@ main {
 
 .row input,
 select {
-  width: 75%;
+  width: 73%;
 }
 
 .select {
@@ -249,7 +259,7 @@ select {
 }
 
 .row label {
-  width: 25%;
+  width: 27%;
 }
 
 .zip {
@@ -257,7 +267,7 @@ select {
 }
 
 .zip input {
-  margin-left: 3.5em;
+  margin-left: 3.85em;
 }
 
 .zip input:nth-of-type(1) {
