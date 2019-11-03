@@ -246,29 +246,33 @@ main {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .row input,
 select {
   width: 73%;
+  flex-grow: 1;
 }
 
 .select {
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+}
+
+.select.row {
+  line-height: .8;
 }
 
 .row label {
   width: 27%;
 }
 
-.zip {
-  display: inline-block;
+#zip {
+  max-width: 30%;
 }
 
-.zip input {
-  margin-left: 3.85em;
+.zip {
+  padding-top: 1.6em;
 }
 
 .zip input:nth-of-type(1) {
